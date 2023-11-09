@@ -1,0 +1,8 @@
+CREATE TABLE customer(
+	id INT NOT NULL AUTO_INCREMENT,
+	name_customer VARCHAR(255) NOT NULL,
+	email VARCHAR(255) NOT NULL,
+	no_phone VARCHAR(255) NOT NULL,
+	address TEXT NOT NULL,
+PRIMARY KEY(id)
+);
