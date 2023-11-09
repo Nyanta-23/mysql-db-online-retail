@@ -29,11 +29,3 @@ VALUES
 UPDATE products SET stock = @new_stock WHERE id = @product;
 
 COMMIT;
-
-SELECT orders.id, orders.amount, orders.total_price, 
-customer.name_customer, products.name_product
-FROM ((orders 
-INNER JOIN customer ON orders.customer_id = customer.id)
-INNER JOIN products ON orders.product_id = products.id);
-
-ALTER TABLE orders MODIFY total_price DECIMAL(5,2);
