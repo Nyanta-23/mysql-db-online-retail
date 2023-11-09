@@ -1,5 +1,3 @@
-
-
 SET @id_order = 5;
 SET @payment_method = 1;
 

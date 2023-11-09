@@ -1,0 +1,5 @@
+CREATE TABLE payments_method(
+	id INT NOT NULL AUTO_INCREMENT,
+	payment_method VARCHAR(255) NOT NULL,
+PRIMARY KEY(id)
+);
