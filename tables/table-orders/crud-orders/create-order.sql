@@ -1,8 +1,6 @@
 -- Case 1
 -- 1 pelanggan membeli 3 barang yang berbeda.
 
-START TRANSACTION;
-
 -- Pilih product dan customer pengen yang mana?
 /*
 	Pilih dengan id yang sesuai
@@ -19,7 +17,7 @@ SET @new_stock:= @current_stock - @amount;
 
 SELECT @price:= price FROM products WHERE id = @product;
 
-SET @total_price = @price + @amount;
+SET @total_price = @price * @amount;
 
 INSERT INTO orders
 (amount, total_price, customer_id, product_id)
@@ -27,5 +25,3 @@ VALUES
 (@amount, @total_price, @customer, @product);
 
 UPDATE products SET stock = @new_stock WHERE id = @product;
-
-COMMIT;
