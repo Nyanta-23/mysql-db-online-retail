@@ -4,8 +4,6 @@ VALUES
 ('Action Figure');
 
 
-SELECT * FROM category;
-
 -- For inserting Data
 -- 'Electronics'
 -- 'Books'
