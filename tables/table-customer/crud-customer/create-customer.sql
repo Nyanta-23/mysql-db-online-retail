@@ -3,9 +3,6 @@ INSERT INTO customer
 VALUES 
 ('Reza Arap Oktavian', 'gamers.ganteng.idaman@example.com', '+1 333-444-5555', 'Nakal Tapi Tampan');
 
-
-SELECT * FROM customer;
-
 -- For inserting Data
 -- 'John Doe', 'john.doe@example.com', '+1 234-567-8901', '123 Main St, Anytown, USA'
 -- 'Jane Smith', 'jane.smith@example.com', '+1 987-654-3210', '456 Maple Dr, Somecity, USA'
