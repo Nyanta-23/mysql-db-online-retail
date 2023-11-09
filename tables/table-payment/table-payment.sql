@@ -1,7 +1,7 @@
 CREATE TABLE payment(
 	id INT NOT NULL AUTO_INCREMENT,
 	date_payment DATE,
-	total INT,
+	total DECIMAL(5,2),
 	id_order INT,
 	payment_method INT,
 PRIMARY KEY(id),
